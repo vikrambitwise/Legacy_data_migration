@@ -1,0 +1,25 @@
+# Local source (and optional target) PostgreSQL.
+# Start: docker compose up -d
+# The init script creates both legacy_db (source) and migration_target (warehouse stand-in).
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: legacy-migration-pg
+    environment:
+      POSTGRES_USER: migrate
+      POSTGRES_PASSWORD: migrate
+      POSTGRES_DB: legacy_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./source/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U migrate -d legacy_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:

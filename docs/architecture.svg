@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+  <rect width="1100" height="720" fill="#0a0e17"/>
+  <text x="550" y="48" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700">AI-Assisted Legacy Data Migration Platform</text>
+  <text x="550" y="74" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="13">FDE-CAPSTONE-DE-01 · LangGraph with human-in-the-loop confidence gating</text>
+  <g font-family="Segoe UI, sans-serif">
+    <rect x="90" y="100" width="920" height="78" rx="10" fill="#1e3a5f" stroke="#94a3b8"/>
+    <text x="550" y="132" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">1. Source layer — Legacy OLTP</text>
+    <text x="550" y="156" text-anchor="middle" fill="#e2e8f0" font-size="12">PostgreSQL / MySQL (Docker) · SQLite local fallback · 7 tables · 12,000+ patients · undocumented codes</text>
+    <rect x="90" y="196" width="920" height="78" rx="10" fill="#134e4a" stroke="#94a3b8"/>
+    <text x="550" y="228" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">2. Schema profiler — Python + SQLAlchemy</text>
+    <text x="550" y="252" text-anchor="middle" fill="#e2e8f0" font-size="12">Tables, types, null rates, cardinality, samples, FK graph, PII flags → schema_profile.json</text>
+    <rect x="90" y="292" width="920" height="78" rx="10" fill="#3b0764" stroke="#94a3b8"/>
+    <text x="550" y="324" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">3. AI orchestration — LangGraph + LangChain</text>
+    <text x="550" y="348" text-anchor="middle" fill="#e2e8f0" font-size="12">schema_profiler → ai_mapper → human_review_gate → rule_generator → migration_executor → validator → doc_generator</text>
+    <rect x="90" y="388" width="920" height="78" rx="10" fill="#7c2d12" stroke="#94a3b8"/>
+    <text x="550" y="420" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">4. Human review gate — confidence &lt; 0.80</text>
+    <text x="550" y="444" text-anchor="middle" fill="#e2e8f0" font-size="12">CLI / JSON queue / HTML · approve · reject · override_note required · no silent bypass</text>
+    <rect x="90" y="484" width="920" height="78" rx="10" fill="#1e3a8a" stroke="#94a3b8"/>
+    <text x="550" y="516" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">5. Validation — Great Expectations + dbt</text>
+    <text x="550" y="540" text-anchor="middle" fill="#e2e8f0" font-size="12">source_baseline · post_extraction · post_load · row counts · null rates · FK tests · reconciliation</text>
+    <rect x="90" y="580" width="920" height="78" rx="10" fill="#365314" stroke="#94a3b8"/>
+    <text x="550" y="612" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">6. Observability — LangFuse + audit log</text>
+    <text x="550" y="636" text-anchor="middle" fill="#e2e8f0" font-size="12">Every LLM call, confidence score, and human decision · prompt_id · audit/migration_audit_log.json</text>
+  </g>
+  <text x="550" y="698" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="12">Target warehouse: Snowflake or BigQuery (local Postgres / SQLite stand-in)</text>
+</svg>

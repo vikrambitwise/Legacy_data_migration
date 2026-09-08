@@ -1,0 +1,40 @@
+# AI-Assisted Legacy Data Migration Platform
+# Python 3.10 – 3.13 recommended (3.13 used in local development).
+
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+sqlalchemy>=2.0.30
+pandas>=2.2.0
+numpy>=1.26.0
+tenacity>=8.3.0
+rich>=13.7.0
+faker>=26.0.0
+
+# Orchestration & agents
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+langchain-anthropic>=0.2.0
+langgraph>=0.2.0
+langfuse>=2.50.0
+
+# Data quality
+great-expectations>=1.0.0
+
+# dbt (Postgres adapter; Snowflake/BigQuery adapters optional at runtime)
+dbt-core>=1.8.0
+dbt-postgres>=1.8.0
+
+# Database drivers / dialects
+psycopg2-binary>=2.9.9
+pymysql>=1.1.0
+snowflake-sqlalchemy>=1.6.0
+snowflake-connector-python>=3.12.0
+google-cloud-bigquery>=3.25.0
+sqlalchemy-bigquery>=1.11.0
+pandas-gbq>=0.23.0
+
+# Testing / docs
+pytest>=8.2.0
+matplotlib>=3.8.0

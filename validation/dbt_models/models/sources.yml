@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: warehouse
+    description: Migrated target warehouse tables
+    schema: public
+    tables:
+      - name: departments
+      - name: staff
+      - name: patients
+      - name: admissions
+      - name: encounters
+      - name: invoices
+      - name: lab_results

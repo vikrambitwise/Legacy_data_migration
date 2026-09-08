@@ -1,0 +1,732 @@
+{
+  "checkpoint": "source_baseline",
+  "results": [
+    {
+      "table": "admit_events",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 13748
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admit_events",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "adm_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admit_events",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "adm_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admit_events",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "adm_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admit_events",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admit_events",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "admit_dt"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admit_events",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "adm_typ"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admit_events",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "dept_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 17950
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "txn_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "txn_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "txn_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "enc_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "amt"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "bill_st"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "billing_txns",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "cpt_cd"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 30023
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "enc_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "enc_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "enc_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "enc_dt"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "enc_typ"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 17870
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "rslt_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "rslt_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "rslt_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "enc_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "test_cd"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "rslt_val"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "rslt_uom"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "abn_flg"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_rslts",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "coll_dt"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 12000
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "pat_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_nm"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "dob"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "sex_cd"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "pat_st_cd"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "zip_cd"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "ssn_last4"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patient_records",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "created_ts"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "ref_dept",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 12
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "ref_dept",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "dept_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "ref_dept",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "dept_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "ref_dept",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "dept_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "ref_dept",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "dept_nm"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "ref_dept",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "loc_cd"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "ref_dept",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "actv_flg"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff_mst",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 200
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff_mst",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "stf_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff_mst",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "stf_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff_mst",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "stf_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff_mst",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "stf_nm"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff_mst",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "role_cd"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff_mst",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "hire_dt"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    }
+  ]
+}

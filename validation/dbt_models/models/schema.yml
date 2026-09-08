@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_row_counts
+    description: Post-migration row counts for every migrated warehouse table.
+    columns:
+      - name: table_name
+        tests: [not_null]
+      - name: row_count
+        tests: [not_null]
+  - name: stg_null_rates
+    description: Null rates for high-risk migrated columns.
+  - name: orphan_patient_pcp
+    description: FK integrity — patients whose PCP staff id does not exist. Must be empty.
+    tests:
+      - empty
+  - name: invalid_patient_status
+    description: Business rule — patient_status must be in the approved closed set. Must be empty.
+    tests:
+      - empty

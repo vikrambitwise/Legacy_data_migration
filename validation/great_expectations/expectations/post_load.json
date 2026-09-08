@@ -1,0 +1,314 @@
+{
+  "checkpoint": "post_load",
+  "results": [
+    {
+      "table": "admissions",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 13748
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admissions",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "admission_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "admissions",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "admission_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "invoices",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 17950
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "invoices",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "invoice_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "invoices",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "invoice_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "invoices",
+      "expectation": "expect_column_values_to_be_in_set",
+      "success": true,
+      "kwargs": {
+        "column": "billing_status",
+        "value_set": [
+          "Draft",
+          "Submitted",
+          "Paid",
+          "Void",
+          null
+        ]
+      },
+      "detail": {
+        "unexpected": []
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 30023
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "encounter_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "encounters",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "encounter_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_results",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 17870
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_results",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "result_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "lab_results",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "result_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patients",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 12000
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patients",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "ssn_last4"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patients",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "patient_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patients",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "patient_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "patients",
+      "expectation": "expect_column_values_to_be_in_set",
+      "success": true,
+      "kwargs": {
+        "column": "patient_status",
+        "value_set": [
+          "Active",
+          "Discharged",
+          "Inactive",
+          "Suspended",
+          null
+        ]
+      },
+      "detail": {
+        "unexpected": []
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "departments",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 12
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "departments",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "department_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "departments",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "department_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff",
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true,
+      "kwargs": {
+        "min_value": 1,
+        "max_value": 10000000
+      },
+      "detail": {
+        "row_count": 200
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff",
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true,
+      "kwargs": {
+        "column": "staff_id"
+      },
+      "detail": {
+        "nulls": 0
+      },
+      "engine": "pandas_fallback"
+    },
+    {
+      "table": "staff",
+      "expectation": "expect_column_values_to_be_unique",
+      "success": true,
+      "kwargs": {
+        "column": "staff_id"
+      },
+      "detail": {
+        "duplicates": 0
+      },
+      "engine": "pandas_fallback"
+    }
+  ]
+}

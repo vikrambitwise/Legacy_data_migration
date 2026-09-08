@@ -1,0 +1,24 @@
+# Great Expectations project config (local / ephemeral runner also used in ge_runner.py).
+# Suites are generated per migration run under expectations/.
+
+config_version: 3
+datasources: {}
+stores:
+  expectations_store:
+    class_name: ExpectationsStore
+    store_backend:
+      class_name: InMemoryStoreBackend
+  validations_store:
+    class_name: ValidationsStore
+    store_backend:
+      class_name: InMemoryStoreBackend
+  checkpoint_store:
+    class_name: CheckpointStore
+    store_backend:
+      class_name: InMemoryStoreBackend
+expectations_store_name: expectations_store
+validations_store_name: validations_store
+checkpoint_store_name: checkpoint_store
+data_docs_sites: {}
+anonymous_usage_statistics:
+  enabled: false

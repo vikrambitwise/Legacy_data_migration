@@ -1,0 +1,56 @@
+# Secrets — never commit
+.env
+.env.local
+.env.*
+!.env.example
+credentials.json
+**/*credentials*.json
+**/*service-account*.json
+**/secrets/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local databases and run artifacts
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+runs/
+*.log
+tests/_tmp/
+
+# dbt
+validation/dbt_models/target/
+validation/dbt_models/dbt_packages/
+validation/dbt_models/logs/
+validation/dbt_models/profiles.yml
+
+# Great Expectations caches
+validation/great_expectations/uncommitted/
+validation/great_expectations/.gx/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LangFuse / notebooks
+*.ipynb_checkpoints/
